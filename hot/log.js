@@ -21,7 +21,7 @@ function logGroup(logFn) {
 module.exports = function (level, msg) {
 	if (shouldLog(level)) {
 		if (level === "info") {
-			console.log(msg);
+			console.info(msg);
 		} else if (level === "warning") {
 			console.warn(msg);
 		} else if (level === "error") {
